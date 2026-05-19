@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar Using flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        :root {
+            --background-color: rgb(175, 180, 183);
+            --text-color: black;
+            --hover-color: rgb(200, 219, 30);
+            --font-size: 15px;
+            --border-radius: 7px;
+        }
+
+        body {
+            background-color: var(--background-color);
+        }
+
+        .logo {}
+
+        .logo img {
+            width: 170px;
+            cursor: pointer;
+        }
+
+        .logo img:hover {
+            background-color: var(--hover-color);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 40px;
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+        }
+
+        .right ul li a{
+            text-decoration: none;
+        }
+
+        .right ul li a:hover{
+            text-decoration: none;
+            background-color: var(--hover-color);
+        }
+
+        .right ul li span {
+            padding: 0px 5px;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--text-color);
+            font-weight: bolder;
+            margin: 25px;
+        }
+
+        p {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .button {
+            text-align: center;
+
+        }
+
+        .button button {
+            padding: 5px 7px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: aqua;
+            color: black;
+            cursor: pointer;
+            border: none;
+        }
+
+        .button button:hover {
+            background-color: var(--hover-color);
+        }
+
+        .hilitting {
+            background-color: yellow;
+        }
+
+        /* .head span hilitting :hover{
+            background-color: var(--hover-color);
+        } */
+
+
+        .container {
+            margin: 40px;
+            display: flex;
+            /* border: 2px solid black; */
+            /* height: 50px;
+            width: 60px; */
+
+            flex-wrap: wrap;
+            gap: 15px 25px;
+        }
+
+        .items {
+            text-align: center;
+            /* border: 2px solid black; */
+            height: 30vh;
+            width: 30vw;
+            background-color: rgb(232, 226, 219);
+            font-weight: bolder;
+        }
+
+        /* English ke liye pahela box */
+        .Download-box1E {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .Download-box1E button {
+            border: none;
+            color: white;
+            background-color: rgb(27, 150, 232);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size);
+            cursor: pointer;
+
+        }
+
+        .Download-box1E button:hover {
+            background-color: var(--hover-color);
+        }
+
+        /* English ke liye dusara box */
+        .Download-box2E {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .Download-box2E button {
+            border: none;
+            color: white;
+            background-color: rgb(7, 153, 29);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size);
+            cursor: pointer;
+
+        }
+
+        .Download-box2E button:hover {
+            background-color: var(--hover-color);
+        }
+
+
+        /* Deutsch ke liye pahela box */
+        .Download-box1D {
+            margin: 40px;
+            text-align: center;
+        }
+
+        .Download-box1D button {
+            border: none;
+            color: white;
+            background-color: rgb(27, 150, 232);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size);
+            cursor: pointer;
+        }
+
+        .Download-box1D button:hover {
+            background-color: var(--hover-color);
+        }
+
+        /* Deutsch ke liye Dusara box */
+        .Download-box2D {
+            margin: 40px;
+            text-align: center;
+        }
+
+        .Download-box2D button {
+            border: none;
+            color: white;
+            background-color: rgb(7, 153, 29);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size);
+            cursor: pointer;
+        }
+
+        .Download-box2D button:hover {
+            background-color: var(--hover-color);
+        }
+
+
+        /* Italiano ke liye pahela box */
+        .Download-box1I {
+            margin: 40px;
+            text-align: center;
+        }
+
+        .Download-box1I button {
+            border: none;
+            color: white;
+            background-color: rgb(27, 150, 232);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size);
+        }
+
+        .Download-box1I button:hover {
+            background-color: var(--hover-color);
+        }
+
+        /* Italiano ke liye dusara box */
+        .Download-box2I {
+            margin: 40px;
+            text-align: center;
+        }
+
+        .Download-box2I button {
+            border: none;
+            color: white;
+            background-color: rgb(7, 153, 29);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size);
+        }
+
+        .Download-box2I button:hover {
+            background-color: var(--hover-color);
+        }
+
+
+        /* Espanol ke liye dusara box */
+        .Download-box1Es {
+            margin: 40px;
+            text-align: center;
+        }
+
+        .Download-box1Es button {
+            border: none;
+            color: white;
+            background-color: rgb(27, 150, 232);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size);
+            cursor: pointer;
+        }
+
+        .Download-box1Es button:hover {
+            background-color: var(--hover-color);
+        }
+
+        /* Espanol ke liye dusara box */
+        .Download-box2Es {
+            margin: 40px;
+            text-align: center;
+        }
+
+        .Download-box2Es button {
+            border: none;
+            color: white;
+            background-color: rgb(7, 153, 29);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size);
+            cursor: pointer;
+        }
+
+        .Download-box2Es button:hover {
+            background-color: var(--hover-color);
+        }
+
+
+        /* Francais ke liye pahela box */
+        .Download-box1F {
+            margin: 40px;
+            text-align: center;
+        }
+
+        .Download-box1F button {
+            border: none;
+            color: white;
+            background-color: rgb(27, 150, 232);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size);
+            cursor: pointer;
+        }
+
+        .Download-box1F button:hover {
+            background-color: var(--hover-color);
+        }
+
+        /* Francais ke liye dusara box */
+        .Download-box2F {
+            margin: 40px;
+            text-align: center;
+        }
+
+        .Download-box2F button {
+            border: none;
+            color: white;
+            background-color: rgb(7, 153, 29);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size);
+            cursor: pointer;
+        }
+
+        .Download-box2F button:hover {
+            background-color: var(--hover-color);
+        }
+
+
+        /* portugues brasileiro ke liye pahela box */
+        .Download-box1Pb {
+            margin: 40px;
+            text-align: center;
+        }
+
+        .Download-box1Pb button {
+            border: none;
+            color: white;
+            background-color: rgb(27, 150, 232);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size);
+            cursor: pointer;
+        }
+
+        .Download-box2Pb button:hover {
+            background-color: var(--hover-color);
+        }
+
+        /* portugues brasileiro ke liye dusara box */
+        .Download-box2Pb {
+            margin: 40px;
+            text-align: center;
+        }
+
+        .Download-box2Pb button {
+            border: none;
+            color: white;
+            background-color: rgb(7, 153, 29);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size);
+            cursor: pointer;
+        }
+
+        .Download-box2Pb button:hover {
+            background-color: var(--hover-color);
+        }
+
+        /* @media not/only mediatype and (expression)
+        {
+            css code
+        } */
+
+        @media only screen and (max-width:500px) {
+            body {
+                background-color: bisque;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Product</a><span></span><img width="14" height="14" src="chevron-down.svg" alt="">
+                    </li>
+                    <li><a href="">Pricing</a><span></span><img width="14" height="14" src="chevron-down.svg" alt="">
+                    </li>
+                    <li><a href="">Resources</a><span></span><img width="14" height="14" src="chevron-down.svg" alt="">
+                    </li>
+                    <li><a href="">About Us</a><span></span><img width="14" height="14" src="chevron-down.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div>
+        <h2>Download UltraEdit for Windows</h2>
+    </div>
+
+    <div>
+        <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+            editor</p>
+    </div>
+
+    <div class="button">
+        <button>DOWNLOAD MAC OR LINUX VERSION</button>
+    </div>
+
+    <div>
+
+        <head><span class="hilitting">UE</span>---Download UltraEdit</head>
+    </div>
+
+    <!-- Give the some option for buy -->
+    <div class="container">
+
+        <!-- For English -->
+        <div class="items">English
+
+            <div class="Download-box1E">
+                <button>Download 32-bit</button>
+            </div>
+
+            <div class="Download-box2E">
+                <button>Download 32-bit</button>
+            </div>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, consequatur.</p>
+
+        </div>
+
+
+        <!-- For Deutsch -->
+        <div class="items">Deutsch
+            <div class="Download-box1D">
+                <button>Download 32-bit</button>
+            </div>
+
+            <div class="Download-box2D">
+                <button>Download 64-bit</button>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quod.</p>
+
+        </div>
+
+
+        <!-- For Italiono -->
+        <div class="items">Italiano
+            <div class="Download-box1I">
+                <button>Download 32-bit</button>
+            </div>
+
+            <div class="Download-box2I">
+                <button>Download 64-bit</button>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dolores!</p>
+
+        </div>
+
+
+        <!-- For Espanol -->
+        <div class="items">Espanol
+
+            <div class="Download-box1Es">
+                <button>Download 32-bit</button>
+            </div>
+
+            <div class="Download-box2Es">
+                <button>Download 64-bit</button>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, in.</p>
+
+        </div>
+
+        <!-- For Francais -->
+        <div class="items">Francais
+            <div class="Download-box1F">
+                <button>Download 32-bit</button>
+            </div>
+
+            <div class="Download-box2F">
+                <button>Download 32-bit</button>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, optio.</p>
+
+        </div>
+
+        <!-- For Portugues brasilero -->
+        <div class="items">Portugues brasileiro
+
+            <div class="Download-box1Pb">
+                <button>Download 32-bit</button>
+            </div>
+
+            <div class="Download-box2Pb">
+                <button>Download 64-bit</button>
+            </div>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, vitae.</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

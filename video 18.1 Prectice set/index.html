@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BoxModel</title>
+    <style>
+           /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            background-color: aqua;
+        }
+        .footer{
+            background-color: blue;
+        }
+
+        .header{
+            color: yellow;
+            padding: 20px;
+            border: 4px solid black;
+            margin: 50px;
+            height: 200px;
+            box-sizing: border-box;
+
+        }
+        .footer{
+            color: brown;
+            padding: 20px;
+            border: 4px solid black;
+            margin: 30px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header box">I am header box</div>
+    <div class="footer box">I am footer box</div>
+</body>
+</html>

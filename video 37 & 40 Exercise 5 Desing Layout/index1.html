@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --text-color: white;
+            --background-color: black;
+
+            --border-color: 2px solid black;
+            --hover-color: red;
+            --active-color: black;
+        }
+
+        header {
+            border: var(--border-radius);
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            height: 50px;
+            background-color: pink;
+            font-size: 15px;
+            padding: 20px 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 50px;
+            font-weight: bolder;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        a:hover {
+            background-color: var(--hover-color)
+        }
+
+        main {
+            background-color: var(--background-color);
+            color: white;
+            padding: 30px;
+            border: 2px solid red
+        }
+
+
+        .container {
+            background-color: green;
+            text-align: center;
+            padding: 50px 30px;
+        }
+
+        .box1 {
+            background-color: bisque;
+            height: 70vh;
+            width: 45%;
+            display: inline-block;
+            margin: 0 12px;
+            border: var(--border-color);
+        }
+
+        .box1 a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .box2 {
+            background-color: blue;
+            height: 70vh;
+            width: 45%;
+            display: inline-block;
+            margin: 0 12px;
+            border: var(--border-color);
+        }
+
+        .box2 a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .text-box {
+            padding: 35px;
+            border: 2px solid white;
+            margin: 50px 35vw;
+            font-size: 22px;
+            border-radius: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        p:hover {
+            background-color: var(--hover-color);
+        }
+
+        .orange-box {
+            height: 55px;
+            width: 60px;
+            background-color: yellow;
+            border-radius: 30px;
+            position: fixed;
+            bottom: 12px;
+            right: 20px;
+        }
+
+
+        footer {
+            text-align: center;
+            height: 50px;
+            background-color: aqua;
+            border: var(--border-color);
+            color: var(--text-color);
+        }
+
+        h1:hover {
+            background-color: var(--hover-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contect</a></li>
+                <li><a href="">Service</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box1"> <a href="">Box1 </a></div>
+
+            <div class="box2"><a href="">Box2</a></div>
+        </div>
+
+        <div class="text-box">
+            <p>Welcome to the sigma wev dev</p>
+        </div>
+
+        <div class="orange-box"></div>
+    </main>
+
+    <footer>
+        <h1>FOOTER</h1>
+    </footer>
+</body>
+
+</html>

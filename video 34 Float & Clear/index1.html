@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using float and clear youselt</title>
+
+    <style>
+        /* Using float image related */
+        img {
+            float: right;
+            border: 3px solid black;
+            padding: 2px;
+            margin: 2px;
+        }
+
+        /* parent */
+        .cards {
+            border: 2px solid black;
+        }
+
+        /* child  */
+        .card {
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3){
+            /* clear: right; */
+            /* clear: left; */
+
+            clear: both;
+            background-color: bisque;
+            font-family: "Poppins", sans-serif;
+            font-size: 20px;
+            padding: 5px 8px;
+        }
+
+        .card:nth-child(2){
+            background-color: rgba(11, 236, 236, 0.195);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+
+        <img width="330"
+            src="https://www.shutterstock.com/shutterstock/photos/1685192821/display_1500/stock-photo-man-standing-in-a-boat-looking-at-a-far-island-during-sunset-at-lake-this-is-a-d-render-1685192821.jpg"
+            alt="image">
+
+        <div class="card">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam sapiente ullam nostrum aliquam ducimus veniam illo sequi! Sint reprehenderit veniam esse blanditiis perferendis! Pariatur quo autem corporis necessitatibus recusandae praesentium laudantium quia atque rerum magnam, id obcaecati ad libero facere similique perspiciatis aut eligendi ab animi dolores nulla porro delectus sequi. Nam sequi, sunt velit culpa cupiditate, ex eius obcaecati reprehenderit et eos incidunt! Non suscipit accusamus in expedita deserunt. Modi voluptatibus eius, explicabo fuga quis cumque velit vitae officia omnis nam reprehenderit, obcaecati at similique ut autem! Beatae eaque incidunt, officia numquam, voluptates earum maiores voluptate aliquid ab perferendis a debitis vel dolorem fuga quia dignissimos atque voluptatibus, iusto labore. Optio, mollitia voluptates et tenetur cupiditate praesentium expedita dolore aut odio ut deserunt asperiores iusto fugit blanditiis repellendus atque quidem fuga. Consequatur dolorem praesentium nobis impedit. Velit sequi nostrum quia officia voluptas adipisci alias qui iure ducimus quasi dolores consequatur ad, fugiat expedita unde eaque! Labore autem ipsam nobis culpa. Iste incidunt adipisci, voluptatem cupiditate nesciunt voluptatibus dolor nobis maiores quia, deserunt accusamus rem aut, eum fugiat quisquam eveniet. Enim neque nesciunt quaerat magni aliquid corrupti atque culpa qui, doloremque est pariatur ab ducimus eligendi similique possimus obcaecati voluptatibus laboriosam ullam aut? Harum odio unde est officiis aperiam, minima voluptatum, fugit, itaque quo animi ipsam deleniti nostrum fugiat minus totam maxime quisquam vel quaerat esse quibusdam nulla maiores! Laborum architecto maiores quo exercitationem nihil assumenda odit vel quibusdam. Odit magnam ipsa, nesciunt dolor ducimus molestias reiciendis a molestiae impedit exercitationem nihil error, in autem, vitae consectetur facere eius doloremque enim? Modi perferendis doloribus magni officiis illum porro corrupti voluptatem, facilis ipsa in distinctio alias, obcaecati iure aut consectetur. Deserunt, cupiditate. Quos laudantium voluptatum aperiam ipsa tenetur cupiditate tempora consequuntur sint quo suscipit quis, enim eius, dignissimos iure nam sed?</p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sed officia sit, doloremque molestias
+                consectetur ipsa optio pariatur suscipit temporibus iure repellat veniam fugiat porro commodi non
+                dignissimos molestiae reprehenderit. Maxime itaque est quod numquam! Incidunt deserunt animi quo sequi
+                odit, officia ipsa explicabo molestiae molestias at, minima nesciunt dignissimos maiores eaque iste
+                excepturi, enim earum quis tempora pariatur quam! Quia, repellendus ad iusto adipisci et quae aperiam
+                ipsa officia consequuntur eum deserunt laboriosam accusamus autem odio libero. Temporibus qui quasi
+                reprehenderit, minima eum velit dolore voluptatum cupiditate! Vel, corrupti voluptatum natus distinctio
+                unde sequi fugit sit. Beatae, velit distinctio. Ab illo quisquam quia odio, doloremque in suscipit ut
+                nisi ducimus, ipsum delectus, rerum quasi perferendis obcaecati. Corporis optio laborum nobis porro at
+                dolorum laudantium, pariatur error id ut quos atque praesentium veritatis rerum numquam minima molestias
+                perferendis fugiat ducimus sapiente. Dolorum laboriosam sapiente quisquam temporibus veritatis omnis
+                eveniet dolore?</p>
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>

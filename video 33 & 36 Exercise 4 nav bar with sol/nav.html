@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primary-color: rgb(5, 52, 84);
+            --secondary-color: rgb(142, 201, 241);
+            --text-color: white;
+            --border-color:2px solid black;
+        }
+
+        body {
+            background-color: var(--secondary-color);
+            border: var(--border-color);
+            padding: 10px;
+            margin: 15px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            font-family: "Poppins", sans-serif;
+            /* border: var(--border-color); */
+            border: 2px solid white;
+            margin: 10px;
+            padding: 10px;
+            background-color: var(--primary-color);
+        }
+
+        ul li {
+            margin: 10px;
+            list-style: none;
+            display: inline;
+            padding: 30px;
+            color: var(--text-color);
+            font-weight: bolder;
+            cursor: pointer;
+
+        }
+
+        ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: darkcyan;
+            text-decoration: none;
+        }
+
+        /* Login item ke liye zyada gap */
+        ul li.login {
+            margin-left: 750px;
+        }
+
+        ul li a.login:hover{
+            background-color:darkcyan;
+        }
+
+
+        h1 {
+            font-family: "Poppins", sans-serif;
+            padding: 40px;
+            margin: 30px;
+            cursor: pointer;
+        }
+
+        h1:hover {
+            background-color: rgb(160, 97, 134);
+        }
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+            color: var(--text-color);
+            padding: 40px;
+            margin: 30px;
+            cursor: pointer;
+        }
+
+        h2:hover {
+            background-color: rgb(75, 180, 184);
+        }
+
+        p {
+            font-family: "Poppins", sans-serif;
+            padding: 10px 15px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+        .button {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .button button {
+            --secondary-color: rgb(1, 13, 19);
+            border-radius: 7px;
+            font-size: 15px;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            border: none;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+        .button button:hover {
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contect</a></li>
+            <li><a href="">Services</a></li>
+
+            <li class="login"><a href="">login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div>
+    <h1>NAVIGATION BAR</h1>
+    <h2>USING HTML AND CSS</h2>
+</div>
+
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, non. Tempora, ea inventore qui placeat voluptate totam iure provident unde quas temporibus? Suscipit fugit aliquam obcaecati nostrum voluptatibus accusantium omnis quo. Rerum distinctio perspiciatis nam saepe molestias sunt illo esse repellendus quaerat consequatur! Assumenda consectetur iusto fugit optio, minima impedit commodi excepturi error facere aperiam nesciunt ut vitae voluptas deleniti debitis placeat eos laborum expedita corrupti est perspiciatis. Error qui temporibus repellat sequi repellendus odit. Minus architecto reiciendis aliquid earum eum sed natus quibusdam voluptatem est vitae! Distinctio, veniam voluptatum? Ad, ea. Magnam, eveniet cum quae eos dicta minus perspiciatis assumenda error repellendus. Consequuntur dolorum itaque eligendi numquam blanditiis hic aut, velit, libero amet molestiae maxime ipsam earum nam deserunt distinctio assumenda perferendis mollitia officiis necessitatibus adipisci quos sed animi maiores. Ullam, quod error! Perferendis consequuntur libero praesentium quis sint doloremque quibusdam, aperiam harum porro illum voluptatibus amet minus aliquam? Assumenda voluptates facere animi aliquam, sint eius! Eveniet ipsum doloremque eligendi ullam voluptatibus voluptates? Assumenda nemo corporis debitis non exercitationem consectetur architecto amet dicta rerum delectus expedita libero aliquid, est doloremque sit eaque saepe voluptas perspiciatis praesentium? Atque tempore et cupiditate, cumque quisquam eligendi pariatur libero magnam alias hic fugit repellat corrupti? Itaque vel exercitationem quas totam nam tempora et rerum blanditiis labore ab non, maiores provident in pariatur omnis aperiam? Voluptas, fugiat ut, dolores eius nostrum natus quas magnam maiores in consectetur libero voluptatum corporis eum porro eveniet. Magnam dolor molestiae rem molestias. Non quibusdam nisi ducimus praesentium dolor.</p>
+</div>
+<div class="button">
+    <button>Read more</button>
+</div>
+
+</html>

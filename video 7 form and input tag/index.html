@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms->Lets learn it</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Form apply for Buy cource </h1>
+
+    <form action="post">
+        <div>
+            <label for="username">Enter your Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your Username">
+        </div>
+
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="Other" name="gender" value="Other">
+            <label for="Other">Other</label>
+        </div>
+
+        <div>
+            <input type="Checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Checkbox</label>
+        </div>
+
+        <div>
+            <label for="comment">Enter your comment</label>
+            <div>
+                <textarea id="comment" name="comment" rows="10" cols="50"></textarea>
+            </div>
+        </div>
+
+        <div>
+            <select name="cource">
+                <option value="Choose">Choose</option>
+                <option value="Java">Java</option>
+                <option value="cpp">cpp</option>
+                <option value="Web Dev">Wev Dev</option>
+            </select>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+
+    <style>
+        /* Global variable */
+        :root {
+            --color: rgb(255, 0, 217);
+            --seccolor: rgb(167, 145, 161);
+
+            --defpad: 25px;
+            --defop: 0.4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            /* opacity: 0.7; */
+            opacity: var(--defop);
+            list-style: none;
+            /* padding: 40px; */
+            padding: var(--defpad);
+
+            border: 2px solid var(--seccolor);
+        }
+
+        ul li:first-child {
+            /* local variable */
+            --color: rgb(229, 237, 19);
+            background-color: var(--color, blue);
+        }
+
+        /* ul li:nth-child(2){
+            --color: rgb(233, 34, 34);
+            background-color: var(--color);
+        } */
+
+        .container {
+            background-color: var(--seccolor);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contect</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A eum dolore odio inventore ab, iusto dolor repellat
+        odit soluta aspernatur quam ducimus tempora alias corrupti dolores omnis ea voluptates quo architecto sapiente
+        quae assumenda, quasi doloribus repudiandae! Corrupti at asperiores libero itaque rem assumenda aut!
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+<!-- background-color: var(--color , blue); ---  I am writting the blue color , its applied if the color is not found -->
+
+
+
+<!-- CSS variable is not used for only color ,its used for value etc -->
+
+<!-- defpad -- means default padding -->
+
+<!-- defop -- means default opecity  -->

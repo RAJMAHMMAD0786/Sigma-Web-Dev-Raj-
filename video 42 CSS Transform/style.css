@@ -1,0 +1,145 @@
+.container {
+    margin: 30px auto;
+    max-width: 1000px;
+    width: 90vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.box {
+    width: calc(20%);
+    margin: 20px 20px;
+    background: #ddd;
+    cursor: pointer;
+    color: #FFF;
+    text-align: center;
+    line-height: 130px;
+}
+
+.blue {
+    background-color: rgba(56, 207, 248, 0.5);
+}
+
+/* for scaleX  */
+.scaleX {
+    transform: scaleX(1);
+    transition: transform 0.5s ease;
+}
+
+.box:hover .scaleX {
+    transform: scaleX(2);
+}
+
+/* for scaleY  */
+.scaleY{
+    transform: scale(1);
+    transform: transform 0.5s ease;
+}
+
+.box:hover .scaleY{
+    transform: scaleX(2);
+}
+
+/* for scale */
+.scale{
+    transform: scale(1);
+    transform: transform 0.5s ease;
+}
+
+.box:hover .scale{
+    transform: scaleX(2);
+}
+
+ /* for translateX  */ 
+ .translateX{
+    transform: translateX(1);
+    transform: transform 0.5s ease;
+}
+
+.box:hover .translateX{
+    transform: translateX(2em);
+}
+
+/* for translateY  */ 
+.translateY{
+    transform: translateY(1);
+    transform: transform 0.5s ease;
+}
+
+.box:hover .translateY{
+    transform: translateY(2em);
+}
+
+/* for translateZ  */ 
+.translate{
+    transform: translate(1);
+    transform: transform 0.5s ease;
+}
+
+.box:hover .translate{
+    transform: translate(2em);
+}
+
+
+/* for rotate  */ 
+.rotate{
+    transform: rotate(odeg);
+    transform: transform 0.5s ease;
+}
+
+.box:hover .rotate{
+    transform: rotate(45deg);
+}
+
+/* for rotateX  */ 
+.rotateX{
+    transform: rotateX(odeg);
+    transform: transform 0.5s ease;
+}
+
+.box:hover .rotateX{
+    transform: rotateX(98deg);
+}
+
+/* for rotateY  */ 
+.rotateY{
+    transform: rotateY(odeg);
+    transform: transform 0.5s ease;
+}
+
+.box:hover .rotateY{
+    transform: rotateY(98deg);
+}
+
+
+/* for skew  */ 
+.skew{
+    transform: skew(1, 1);
+    transform: transform 0.5s ease;
+}
+
+.box:hover .skew{
+    transform: skew(45deg, 20deg);
+}
+
+/* for skewX  */ 
+.skewX{
+    transform: skewX(1);
+    transform: transform 0.5s ease;
+}
+
+.box:hover .skewX{
+    transform: skewX(45deg);
+}
+
+/* for skeY  */ 
+.skewY{
+    transform: skewY(1);
+    transform: transform 0.5s ease;
+}
+
+.box:hover .skewY{
+    transform: skewY(45deg);
+}

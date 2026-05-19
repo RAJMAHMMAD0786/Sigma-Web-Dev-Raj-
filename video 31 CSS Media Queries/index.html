@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Meadia Queries</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        /* @media not/only mediatype and (expression)
+        {
+            css code
+        } */
+
+        @media only screen and (max-width:450px){
+            body {
+                background-color: darkblue;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+
+        }
+
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            width: 244px;
+            height: 244px;
+            background-color: aqua;
+            padding: 3px;
+            margin: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Hey I am Raj mahmmad and red body gye
+    </div>
+
+    <div class="boxes">
+        <div class="box">First B</div>
+        <div class="box">Second B</div>
+        <div class="box">Third B</div>
+    </div>
+
+</body>
+
+</html>
+
+
+<!-- meadi Queries -->
+
+<!-- Meadi Queres is used for making a responsive design -->
+
+
+
+
+<!-- ISAKA USED KAM HOTA HAI -->
+
+<!-- @media screen and (orientation:portraite)
+        {
+            body{
+                border: 2px solid black;
+            }
+        } -->

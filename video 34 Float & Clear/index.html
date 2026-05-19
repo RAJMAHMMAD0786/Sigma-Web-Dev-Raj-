@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        /* image ko left or right side kar do */
+        img {
+            float: right;
+            /* float: left; */
+        }
+
+        /* parent hai  */
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        /* child hai  */
+        .card {
+            border: 2px solid red;
+        }
+
+        /* Using clear  */
+        .card:nth-child(3) {
+            clear: both;
+            /* clear: right; */
+            /* clear: left; */
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+
+        <img src="https://media.istockphoto.com/id/1975931738/photo/sarasota-florida-skyline-island-and-marina.jpg?s=1024x1024&w=is&k=20&c=ThBOS-lRut-jCAjcrhNUtru_k9pro7EsRu36RjANmok="
+            alt="" width="330">
+
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aperiam laudantium maiores
+                inventore at quis eveniet veniam cum perspiciatis veritatis, quod nemo commodi minima iusto eum rem
+                distinctio accusantium hic libero ea voluptatum. Quo exercitationem accusamus velit molestias esse
+                voluptatem laboriosam nemo harum non iure, odit rerum itaque! Impedit consequatur blanditiis rerum natus
+                quasi tenetur reprehenderit qui esse autem facilis praesentium exercitationem, voluptatem enim placeat
+                est tempora deleniti nisi laboriosam.</p>
+        </div>
+
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis praesentium odio cum! Et reiciendis,
+                veniam, quos commodi molestiae unde ipsa officiis, consequatur nobis aspernatur sequi! Omnis laboriosam
+                labore molestiae saepe aliquid modi ipsa ipsum? Adipisci sit commodi ex earum quia, quisquam officia
+                porro quasi reiciendis suscipit soluta mollitia. Optio commodi consectetur, quas, accusamus at repellat
+                adipisci sunt, dolor voluptatum culpa cupiditate repudiandae quam perspiciatis ipsa temporibus
+                laboriosam delectus error ab voluptatem fugit nostrum harum a sed nihil? Accusamus ullam quasi corporis,
+                quos minus culpa beatae laboriosam eligendi optio rerum repellendus impedit veritatis maxime sit unde
+                quisquam vero in, nulla totam explicabo rem, eum suscipit commodi? Nihil, explicabo voluptate cumque,
+                iusto quisquam earum repellat possimus sed adipisci nobis omnis molestiae veniam beatae exercitationem.
+                Asperiores ut numquam tempora excepturi cum maiores facere, velit, voluptatem hic magnam, eos nisi dicta
+                optio soluta! Cum repellendus modi odit reprehenderit ut dignissimos laborum mollitia aliquid tempora
+                nobis, quaerat, cupiditate sequi eaque totam hic ipsa provident laboriosam eius. Voluptatibus aliquid
+                esse, mollitia corporis quo voluptate accusamus in! Reiciendis modi quam nesciunt. At quod ut saepe modi
+                enim laboriosam recusandae dicta sequi ea nesciunt autem harum est laborum, nisi impedit voluptate.
+                Possimus totam exercitationem voluptatem fuga repudiandae in!</p>
+        </div>
+        <div class="card">card 3</div>
+    </div>
+</body>
+
+</html>

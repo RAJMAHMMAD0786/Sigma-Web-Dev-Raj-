@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element Selector */
+        /* div{
+            background-color: red;
+        } */
+        /* Class Selector */
+        .red {
+            background-color: red;
+        }
+
+        /* Id Selector */
+        #green {
+            background-color: green;
+        }
+
+        /* child Selector ---> Agar div ka child hai p to hoga color nahi to nahi hoga  */
+        div>p {
+            color: azure;
+            background-color: black;
+        }
+
+        /* Descendant Selector ---> Agar div ka child nahi hoga Directaly p fir bhi hoga color */
+        div p {
+            color: azure;
+            background-color: black;
+        }
+
+        /* Universal Selector---> Remove the gap of web page */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        /* Jis link ko aapne visit  kiya hai usaka color yellow hoga */
+        a:visited {
+            color: yellow;
+        }
+
+        /* Jis link ko aapne visit nahi kiya hai usaka color green hoga */
+        a:link {
+            color: green;
+        }
+
+        /* Jis link pe aap click karoge usaka Background color red ho jayega  */
+        a:active {
+            background-color: red;
+        }
+
+        /* Jis link pe aap cursore le kar jaoge to usaka background color darkblue ho jayega*/
+        a:hover {
+            background-color: darkblue;
+        }
+
+        /*Parag tag first-child hoga kisi bbi tag ka To usaka color kar do aqua */
+        p:first-child {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first paragraph tag of main tag</p>
+        <p>I am second paragraph tag of main tag</p>
+    </main>
+
+    <div class="red">
+        I am div tag2
+        <span>
+            <p>I am paragraph tage not inside the div tag</p>
+        </span>
+    </div>
+
+    <div id="green">
+        I am an anothre div tag
+    </div>
+
+    <a href="https://www.google.com ">Go to google</a>
+    <a href="https://www.facebook3.com ">Go to facebook3</a>
+    <a href="https://www.instagram1.com ">Go to instagram1</a>
+
+</body>
+
+</html>
+
+
+
+
+<!-- background-color is properties and red color is a value  -->
+
+<!-- .red-> means class is red  -->
+
+
+<!-- #green-> means id is green -->

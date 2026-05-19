@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making n nav bar</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
+    <style>
+        /* :root {
+            --primary-color: #8420e1;
+            --secondary-color: #dac5ed;
+            --text-color: white;
+        } */
+
+        :root {
+            --primary-color: #c307b0;
+            --secondary-color: #fcb3f7;
+            --text-color: white;
+        }
+
+        body {
+            background-color: var(--secondary-color);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 12px 0;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 25px;
+            font-weight: bolder;
+        }
+
+        ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        /* cursor ko waha le ja kar click karne par color red ho jayega  */
+        a:avtive {
+            color: red;
+        }
+
+        /* cursor ko waha le jane pe color black ho jayega  */
+        a:hover {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contect</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

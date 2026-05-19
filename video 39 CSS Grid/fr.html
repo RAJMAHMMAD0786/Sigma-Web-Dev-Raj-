@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+
+            border: 2px solid black;
+            display: grid;
+
+            width: 80vw;
+            height: 100vh;
+
+            /* grid-template-columns: 1fr 2fr 1fr; */
+
+            /* grid-template-columns: repeat(4 ,1fr); */
+
+            grid-template-columns: repeat(4, minmax(100px, 1fr));
+
+            /* gap: 40px; */
+            /* row-gap: 10px;
+            column-gap: 50px; */
+            gap: 10px 50px;
+
+            justify-items: center;
+            align-items: center;
+            place-content: center;
+        }
+
+        .item {
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+            text-align: center;
+
+        }
+
+        .item-1 {}
+
+        .item-2{
+            /* align-self: start; */
+        }
+
+        .item-4 {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+<!-- fr ka matalab hota hai ki jitana width hota hai usako barabar-barabar hisa mai bat leta hai -->
+
+
+
+<!-- flexbox and grid mai padding ka used nahi kya jata hai , Isame gap used kiya jata hai -->

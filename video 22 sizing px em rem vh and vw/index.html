@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* root of elements hota hai */
+        html{
+            font-size: 12px;
+        }
+
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 1545px;
+            width: 80vw;
+            height: 10vh;
+            margin:auto;
+            background-color:aquamarine;
+        }
+
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1545px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin:23px auto;
+            /* font-size: 18px; */
+            background-color:aquamarine;
+        }
+
+        /* em kam matalab hota hai ki font size ko inherite kar lo or jitana em bola ja raha hai usase multiply kar do */
+        .container p{
+            /* font-size: 2em; */
+            font-size: 2rem;
+            border: 2px solid red;
+            /* % Attribute ka matalab hota hai ki jitana % bol raha hai utana se divid karo */
+            width: 50%;
+        }
+
+        /* vmin hamare laptop mai screan ki height(h) hoga, and vmin hamare mobile mai screan ki width(w) hoga  */
+        .mycont{
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin:23px auto;
+            background-color: darkcyan;
+            color: black;
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">This is a box</div>
+
+    <div class="container">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat voluptas quae aut reprehenderit mollitia temporibus ad voluptates perferendis laudantium eos ullam, modi tenetur odio vitae facere ab nisi ratione magnam. Inventore nobis aspernatur ipsum molestiae earum accusantium. Ad, consequuntur quam et, accusamus perspiciatis quia nam totam incidunt, laboriosam dolore fuga.
+        </p>
+       
+        <!-- Lorem9999 Expolore these -->
+    </div>
+
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+</html>
+
+
+<!-- rem ka matalab hai ki jitana bola ja raha hai usase multiply kar do root ke font-size se  -->
+
+
+<!-- margin:auto is alow only for block elements -->
+
+<!-- px vw vh vmin vmax -->
+
+<!-- vmin=vh(height) and vmax=vw(width) in laptop -->
+

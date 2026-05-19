@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* Universal selector */
+        /* The specificity of this selector is 0 */
+        * {
+            color: aliceblue;
+        }
+
+        /* Element selector */
+        /* The specificity of this selector is 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /* class selector */
+        /* The specificity of this selector is 10 */
+        .cred {
+            color: red;
+        }
+
+        /* The specificity of this selector is 10+1=11 */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* The specificity of this selector is 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* Attribute Selector */
+        /* The specificity of this selector is 10 */
+
+        [data-x=a] {
+            color: darkslategrey;
+        }
+
+        /* Quick Quiz */
+        /* The specificity of this selector is 1+10+10=21 */
+        h1.cpurple.cred {
+            color: red;
+        }
+
+        /* Id selector */
+        /* The specificity of this selector is 100 */
+        #green {
+            color: rgb(57, 114, 57);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="green" class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>
+
+
+
+<!-- Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector -->
+
+
+<!-- !important ki priority sabse jayada hota hai -->
+
+<!-- Specificity Calculation
+To calculate specificity, assign a value to each part of the selector:
+
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000 
+!important at the end of a CSS value gets a specificity score of 10,000 points.-->

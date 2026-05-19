@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            background-color: beige;
+
+            /* Rotate property */
+            transform: rotate(45deg);
+            /* transform: rotate(0.125turn); */
+
+            /* transform: rotateX(98deg); */
+
+            /* scale property */
+            /* transform: scale(3.5); */
+            /* transform: scaleY(4); */
+            /* transform: scale3d(); */
+
+
+            /* skew property (skew propety are not allow for Z) */
+
+            /* transform: skew(15deg); */
+            /* transform: skewX(50deg); */
+
+
+            /* translate property */
+            /* transform: translate(100%); */
+            /* transform: translateY(100%); */
+            /* transform: translateY(100%) skew(40deg) translateX(-45%) rotate(45deg); */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+<!-- multiple transform property ka used kiya jata hai , suppose aap nav bar bana rahe ho and us nav bar ko hide karne ke liye multiple transform property ka used kiya jata hai -->

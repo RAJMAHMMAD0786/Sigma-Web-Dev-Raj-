@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS object-fit & possition</title>
+    <style>
+        .container{
+            height: 588px;
+            width: 466px;
+            border: 2px solid black;
+
+            /* background-color: antiquewhite; */
+
+            /* Background image ! */
+
+            background-position:center center;
+            /* background-position: top right; */
+
+            background-image: url(https://media.gettyimages.com/id/175398634/photo/small-photographer.jpg?s=612x612&w=gi&k=20&c=DpnPdnkEzXvkg-GDIgMiCYbpm7j6JLi4vv0rRC58NjI=);
+
+            background-repeat: no-repeat;
+            background-clip: content-box;
+
+        }
+
+        img{
+            width: 466px;
+            height: 488px;
+
+            object-fit: cover;
+            /* object-fit: fill; */
+
+            /* Kitana duri pe dikhana chahte ho */
+            /* object-position: 10px 20px; */
+            /* object-position: 50% 50%; */
+
+            /* Kiss part ko dikhana chahte ho */
+            /* object-position: top right; */
+
+            /* object-fit: contain; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <img src="https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?cs=srgb&dl=pexels-andre-furtado-43594-1264210.jpg&fm=jpg" alt=""> -->
+    </div>
+</body>
+
+</html>
+
+
+
+
+<!-- object-fit: contain  ka matalab hota hai ki pura image dikha do bhale hi with and height bach raha hai to bachane do  -->
