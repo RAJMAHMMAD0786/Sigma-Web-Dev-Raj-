@@ -10,6 +10,7 @@ import raj from "./mymodule.js"
 console.log(raj)   
 
 
+
 //---> ham kaise used kar rahe hai module require export etc ko is function ke help se used kar rahe hai
 // (function(exports,require,module,__filename,__dirname){ 
 
