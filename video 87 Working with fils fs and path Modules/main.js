@@ -26,6 +26,8 @@ fs.writeFile("Raj1.text","Raj Mahmmad is a B Tech (CSE) student1" , ()=>{
         console.log(error,data.toString())
     })
 
+    // again, Agar mai same code likhun toh isako call back hell bolenge
+
 })
 
 // fs.appendFile ---> iske used se ham us file ke andar jakar jo likhana chahte hai voh likh pa rahe hai, jitana bar aap run karoge utana bar vaha pe append hoga 
