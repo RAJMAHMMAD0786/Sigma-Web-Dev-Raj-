@@ -12,14 +12,17 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+// about
 app.get('/about', (req, res) => {
   res.send('About us')
 })
 
+// contect
 app.get('/contect', (req, res) => {
   res.send('Hello contect me!')
 })
 
+// blog
 app.get('/blog', (req, res) => {
   res.send('This is blog!')
 })
@@ -38,9 +41,14 @@ app.get('/blog/:slug', (req, res) => {
     console.log(req.query)   //will output {mode:='dark' , region:='in'}
 
   res.send(`Hello ${req.params.slug}`)
+
 })
 
 
+
+
+
+// mujhe har bar alag alag bana pad raha hai get request jo ki yek good way nahi hai 
 
 // app.get('/blog/intro-to-js', (req, res) => {
 //     // logic to fetch intro to js from the db(Data Base)
@@ -57,3 +65,4 @@ app.get('/blog/:slug', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+

@@ -9,11 +9,15 @@
 
 <body>
 
+    <!-- class selector -->
     <div class="container">
-        <div class="box">
+        This is a container
+    </div>
+
+    <!-- id selector  -->
+    <div id="box">
             I am a Box
         </div>
-    </div>
 
     <script>
 
@@ -23,6 +27,13 @@
         console.log(document.body);
 
         document.body.style.backgroundColor = "red";
+
+
+        // change the container text
+        document.querySelector(".container").innerHTML="This is not a container"
+
+        // change the box text
+        document.getElementById("box").innerHTML="I am Not a box"
 
     </script>
 </body>
