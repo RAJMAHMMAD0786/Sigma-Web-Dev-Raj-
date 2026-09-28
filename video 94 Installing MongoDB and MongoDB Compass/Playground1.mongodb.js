@@ -54,6 +54,11 @@ db.getCollection('sales').insertMany([
     "name": "Machine Learning",
     "price": 12000,
     "Instructor": "Rohit Kumar"
+  },
+  {
+    "name": "Deep Learning",
+    "price": 11000,
+    "Instructor": "Rohit Kumar"
   }
 ]);
 
